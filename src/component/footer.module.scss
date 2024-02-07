@@ -1,0 +1,140 @@
+
+.MainContainer{
+  background: #100B20;
+  position: relative;
+}
+
+.flexContainer{
+  @media(min-width:750px){
+    display: flex;
+  justify-content: space-around;
+  padding:30px 10px;
+  
+  & .sec1{
+    flex-basis:30%;
+  }
+  & .sec2{
+    flex-basis:20%;
+  }
+  & .sec3{
+    flex-basis:20%;
+  }
+  margin-left: 0px;
+  margin-right:0px;
+  }
+
+
+  margin-left: 20px;
+  margin-right: 6px;
+
+
+
+  & .sec1{
+    margin:10px;
+    position: relative;
+  }
+  & .sec2{
+    margin:10px;
+    position:relative;
+  }
+  & .sec3{
+    margin:10px;
+    margin:relative;
+  }
+  .color{
+    color: #D434FE;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 172.4%; /* 24.136px */
+  }
+  
+  .social{
+    margin:0 10px;
+  }
+}
+
+
+.star1{
+  @media(min-width:750px){
+  position: absolute;
+  left:-5%;
+  top: 19%;
+  width: 3%;
+  }
+  position: absolute;
+  left: -5%;
+  top:36%;
+  width: 3%;
+}
+
+.star2{
+  position: absolute;
+  left: 73%;
+  top: 36%;
+  width: 4%;
+}
+
+.star3{
+  @media(min-width:750px){
+    position: absolute;
+    width: 3%;
+    left: 64%;
+    top:25%;
+    }
+  position: absolute;
+  width: 3%;
+  left: 61%;
+  top: 39%;
+}
+
+.star4{
+  @media(min-width:600px){
+    width: 1%;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    }
+  width: 2%;
+  position: absolute;
+  left: 50%;
+  top: 77%;
+}
+
+
+
+
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 2.5s ease infinite; /* Adjust the duration as needed */
+}
+
+
+@keyframes blink2 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink2 {
+  animation: blink 2.0s ease infinite; /* Adjust the duration as needed */
+}
+
+
+@keyframes blink3 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink3 {
+  animation: blink 1.5s ease infinite; /* Adjust the duration as needed */
+}

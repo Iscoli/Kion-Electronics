@@ -1,0 +1,207 @@
+
+.MainContainer{
+  @media(min-width:860px){
+    display: flex;
+    justify-content: space-around;
+    margin:100px 0;
+
+  }
+
+  margin:100px 0;
+}
+
+
+
+
+
+
+
+
+.imgDiv{
+  @media(min-width:860px){
+    flex-basis:40%;
+    & img{
+      width:90%;
+    }
+  }
+   display: flex;
+   justify-content: center;
+  
+  
+   & img{
+    width:90%;
+   }
+ 
+
+}
+
+
+
+
+
+.formDiv{
+  @media(max-width:860px){
+  .inputDiv{
+    margin:15px 0 ;
+  }
+}
+  @media(min-width:860px){
+    width: 50%;
+   
+    flex-shrink: 0;
+    border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding:40px 0;
+  flex-basis: 40%;
+ 
+    & .formDivider{
+      display: flex;
+      margin-top:20px;
+      justify-content:space-around;
+      
+      & input {
+        width:80%;
+        height:40px;
+        border-radius: 4px;
+        border: 1px solid #FFF;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #FFF;
+        padding: 5px;
+      }
+      & select{
+        width:80%;
+        height:40px;
+        border-radius: 4px;
+        border: 1px solid #FFF;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #FFF;
+        padding: 5px;
+
+      }
+      & select option {
+        background-color: #FFF;
+        color: #150E28;
+    }
+      .inputDiv{
+        flex-basis: 50%;
+      }
+     
+    }
+    .RegisterBtn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width:80%;
+      height:43px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    }
+  }
+ 
+  & input {
+    width: 80%;
+    height:6vh;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    padding: 5px;
+  }
+  & .RegisterBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:34%;
+    height:43px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+  }
+  & input[type="radio"] {
+    width:10px;
+    border-radius: 2px;
+    border: 1px solid #FFF;
+    height:2vh;
+  }
+
+  & select{
+    width:80%;
+    height:40px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    padding: 5px;
+
+  }
+  & select option {
+    background-color: #FFF;
+    color: #150E28;
+}
+}
+
+
+
+
+.star1{
+  width: 2%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+
+.star2{
+  position: absolute;
+  top: 72%;
+  left: 10%;
+  width: 2%;
+}
+
+.star3{
+  position: absolute;
+  left: 80%;
+  top: 5%;
+}
+
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 2.5s ease infinite; /* Adjust the duration as needed */
+}
+
+
+@keyframes blink2 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink2 {
+  animation: blink 2.0s ease infinite; /* Adjust the duration as needed */
+}
+
+
+@keyframes blink3 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink3 {
+  animation: blink 1.5s ease infinite; /* Adjust the duration as needed */
+}
+
+
+

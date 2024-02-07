@@ -1,0 +1,218 @@
+.line{
+  border: 1px solid rgba(255, 255, 255, 0.18);
+background: #140D27;
+margin-top:60px;
+}
+
+.SecFive{
+  @media(min-width:750px){
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-around;
+    
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+  
+}
+
+
+.thinking{
+  width:100%;
+  margin-top:90px;
+}
+
+.thinkingDiv{
+  @media(min-width:750px){
+    
+    flex-basis: 35%;
+    
+  }
+ 
+  width: 350px;
+  margin-top: 40px;
+  
+  .question1,
+  .question2,
+  .question3{
+    color: #D434FE;
+    font-family: MADE TOMMY Outline;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.5px; /* 21.484% */
+  }
+  .questionCategory{
+
+    & .question1{
+      margin: 10px;
+      margin-top:40px;
+      position: absolute;
+    }
+    & .question2{
+      margin: 40px;
+      margin-top:20px;
+      position: absolute;
+      margin-left: 90px; 
+    }
+    & .question3{
+      margin: 10px;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 170px; 
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+.introduction{
+  @media(max-width:750px){
+   
+    
+    .p1{
+      text-align: center;
+    }
+    .p2{
+     text-align: center;
+    }
+    .p3{
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  .p1{
+    color: #FFF;
+    font-family: Clash Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height:100%; /* 0px */
+  }
+  .p2{
+    color: #D434FE;
+    font-family: Clash Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height:100%;
+  }
+  margin-right: 15px;
+  margin-left: 3px;
+  margin-top:3px;
+  flex-basis:40%;
+  
+ .name{
+    width:100%;
+    height: 1px;
+    background-color: #D434FE;
+ }
+ .btn{
+  color: #D434FE;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px;
+ }
+ .plusDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ 
+}
+
+
+.star3{
+  @media(min-width:750px){
+    top: -10%;
+  }
+  position: absolute;
+  top: -1%;
+  width: 3%;
+}
+
+.star4{
+  position: absolute;
+    top: 40%;
+    margin-left: 16%;
+    width: 4%;
+}
+
+.star5{
+  position: absolute;
+  top: 18%;
+  margin-left: 45%;
+  width: 4%;
+}
+
+.star6{
+  position: absolute;
+  width: 5%;
+  top:60%;
+  margin-left:5%;
+}
+
+.star7{
+  position: absolute;
+  width: 5%;
+  bottom: 0%;
+  margin-left: 55%;
+}
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 2.5s ease infinite; /* Adjust the duration as needed */
+}
+
+
+@keyframes blink1 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink1 {
+  animation: blink 2.0s ease infinite; /* Adjust the duration as needed */
+}
+
+@keyframes blink2 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink2 {
+  animation: blink 2.0s ease infinite; /* Adjust the duration as needed */
+}
+
+
+@keyframes blink3 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink3 {
+  animation: blink 1.5s ease infinite; /* Adjust the duration as needed */
+}

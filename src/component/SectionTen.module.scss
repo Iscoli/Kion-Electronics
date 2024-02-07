@@ -1,0 +1,216 @@
+
+.line{
+  border: 1px solid rgba(255, 255, 255, 0.18);
+background: #140D27;
+margin-top:60px;
+}
+
+.container{
+  @media(min-width:750px){
+   display: flex;
+   align-items: center;
+    justify-content:right;
+  }
+
+  .p1{
+    color: #FFF;
+    font-family: Clash Display;
+    font-size:52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .p2{
+    color: #D434FE;
+    font-family: Clash Display;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+
+  .p3{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 188.4%; /* 26.376px */
+  }
+
+
+}
+
+.sec1{
+
+  flex-basis:40%;
+
+
+
+ & .title{
+    
+  p{
+    @media(min-width:750px){
+     text-align: left;
+     }
+    font-size:14px;
+    text-align:center;
+    margin:23px;
+  }
+  }
+
+ 
+
+
+
+
+  
+
+    
+
+ & .box{
+  @media(max-width:750px){
+    margin:0 auto;
+    }
+    max-width: 569px;
+    max-height: 408px;
+    width: 295px;
+    height: 635px;
+    flex-shrink: 0;
+    margin: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #D434FE;
+    background: rgba(217, 217, 217, 0.03);
+    border-radius: 5px;
+    border: 1px solid #D434FE;
+    background: rgba(217, 217, 217, 0.03);
+    p{
+      @media(min-width:750px){
+       text-align: left;
+       font-size:13px;
+       }
+      font-size:12px;
+      text-align:center;
+      margin:4px 10px;
+    }
+    & .btn{
+      flex-shrink: 0;
+      border-radius: 5px;
+      border: 1px solid #D434FE;
+      background-color:#D434FE;
+      margin: 13px;
+      padding:5px;
+      text-align: center;
+    }
+  }
+}
+
+
+.foto{
+  flex-basis:30%;
+  position: relative;
+  margin-left:70px;
+  margin-top: 50px;
+  
+
+  & img{
+    width:80%;
+  }
+  & .virus{
+    position: absolute;
+  }
+  & .kwado{
+    margin-top:130px;
+  }
+  
+}
+
+
+
+
+
+
+
+.star1{
+  position: absolute;
+  left: 50%;
+  width: 4%;
+}
+
+.star2{
+  @media(max-width:750px){
+    left:6%;
+  }
+  width:3%;
+  position: absolute;
+  top: 15%;
+}
+
+
+
+.star3{
+ left:56%;
+  width:3%;
+  position: absolute;
+  top: 15%;
+}
+
+  .star4{
+    left: 19%;
+    width: 2%;
+    position: absolute;
+    top: 80%;
+  }
+
+
+  .star5{
+    left: 29%;
+    width: 2%;
+    position: absolute;
+    top: 69%;
+  }
+
+
+  .star6{
+    left: 84%;
+    width: 3%;
+    position: absolute;
+    top: 80%;
+  }
+
+
+
+    
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 2.5s ease infinite; /* Adjust the duration as needed */
+}
+
+
+@keyframes blink2 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink2 {
+  animation: blink 2.0s ease infinite; /* Adjust the duration as needed */
+}
+
+
+@keyframes blink3 {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink3 {
+  animation: blink 1.5s ease infinite; /* Adjust the duration as needed */
+}
