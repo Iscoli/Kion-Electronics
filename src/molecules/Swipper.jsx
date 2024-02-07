@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import Basket1 from "../assets/Kion-image/Kion.jpeg";
+import Basket1 from "../assets/Kion-image/Kion2.jpeg";
 import Basket2 from "../assets/kion-image/kion5.jpeg";
 import Basket3 from "../assets/Kion-image/Kion3.jpeg";
 import Basket4 from "../assets/Kion-image/Kion4.jpeg";
