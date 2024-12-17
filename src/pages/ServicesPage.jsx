@@ -52,9 +52,7 @@ export const ServicesPage = () => {
         <Button
           variant="primary"
           size="lg"
-          onClick={() =>
-            window.open("mailto:services@kionelectric.com", "_blank")
-          }
+         
         >
           Request Service
         </Button>
