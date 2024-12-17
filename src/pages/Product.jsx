@@ -1,17 +1,19 @@
 import Button from "../component/ui/Button";
+import Image1 from "./assests/image1.jpeg";
+import Image2 from "../component/assests/image2.jpeg";
 
 const products = [
   {
     id: 1,
     name: "Solar Generator",
-    image: "/src/component/assests/image2.jpeg",
+    image: `${Image1}`,
     description:
       "A high-efficiency solar generator designed for both home and outdoor use. It provides reliable power backup with zero emissions.",
   },
   {
     id: 2,
     name: "Electric Bike Charger",
-    image: "/src/component/assests/image1.jpeg",
+    image: `${Image2}`,
     description:
       "An advanced electric bike charger with fast-charging capabilities, designed for durability and convenience.",
   },
