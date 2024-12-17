@@ -3,7 +3,7 @@ import FeaturedProducts from "../component/FeaturedProducts";
 import VideoSection from "../component/VideosSection";
 import SpecialOffers from "../component/SpecialOffers";
 import AboutCompany from "../component/AboutCompany";
-import Newsletter from "../component/NewsLetter";
+import Newsletter from "../component/NewssLetter";
 
 import Hero from '../component/Hero';
 

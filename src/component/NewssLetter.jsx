@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Newsletter = () => {
+const Newssletter = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
@@ -45,4 +45,4 @@ const Newsletter = () => {
   );
 };
 
-export default Newsletter;
+export default Newssletter;
