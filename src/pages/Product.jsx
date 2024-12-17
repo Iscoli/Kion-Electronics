@@ -4,14 +4,14 @@ const products = [
   {
     id: 1,
     name: "Solar Generator",
-    image: "/src/assets/image1.jpeg",
+    image: "/src/component/assests/image2.jpeg",
     description:
       "A high-efficiency solar generator designed for both home and outdoor use. It provides reliable power backup with zero emissions.",
   },
   {
     id: 2,
     name: "Electric Bike Charger",
-    image: "/src/assets/image2.jpeg",
+    image: "/src/component/assests/image1.jpeg",
     description:
       "An advanced electric bike charger with fast-charging capabilities, designed for durability and convenience.",
   },

@@ -3,7 +3,7 @@ import heroImage from "../assets/hero2.jpeg";
 const Hero = () => {
   return (
     <section
-      className="relative mt-[58px] min-h-[400px] flex items-center justify-center bg-cover bg-center text-white text-center"
+      className="relative mt-[59px] min-h-[400px] flex items-center justify-center bg-cover bg-center text-white text-center"
       style={{ backgroundImage: `url('${heroImage}')` }}
     >
       <div className="relative z-10 max-w-xl p-4">

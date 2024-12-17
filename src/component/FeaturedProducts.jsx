@@ -1,5 +1,7 @@
 
 import PropTypes from "prop-types";
+import Image1 from "./assests/image1.jpeg";
+import Image2 from "./assests/image2.jpeg";
 
 const ProductCard = ({ imageSrc, title, description }) => {
   return (
@@ -25,12 +27,12 @@ ProductCard.propTypes = {
 const FeaturedProducts = () => {
   const products = [
     {
-      imageSrc: "/src/assets/image1.jpeg",
+      imageSrc: `${Image1}`,
       title: "Portable Power Station",
       description: "Compact and reliable energy wherever you go.",
     },
     {
-      imageSrc: "/src/assets/image2.jpeg",
+      imageSrc: `${Image2}`,
       title: "Electric Bike Repair",
       description: "Professional repair services for electric bikes.",
     },
