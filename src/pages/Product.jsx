@@ -1,5 +1,5 @@
 import Button from "../component/ui/Button";
-import Image1 from "./assests/image1.jpeg";
+import Image1 from "../component/assests/image1.jpeg";
 import Image2 from "../component/assests/image2.jpeg";
 
 const products = [
