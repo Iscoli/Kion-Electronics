@@ -1,6 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
+import { Link } from "react-router-dom"; // Importing Link from react-router-dom
 
 const Header = () => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
@@ -10,7 +10,6 @@ const Header = () => {
     { label: "Products", href: "/products" },
     { label: "Support", href: "/support" },
     { label: "Services", href: "/services" },
-    // { label: "Account", href: "index.html" },
     { label: "About Us", href: "/about" },
   ];
 
@@ -21,7 +20,8 @@ const Header = () => {
   return (
     <header className="bg-blue-500 text-white p-4 fixed top-0 left-0 w-full z-50 shadow-md flex justify-between items-center">
       <div className="logo text-xl font-bold">
-        <a href="/">Kion Electric</a>
+        <Link to="/">Kion Electric</Link>{" "}
+        {/* Using Link instead of anchor tag */}
       </div>
 
       {/* Desktop Navigation */}
@@ -29,12 +29,12 @@ const Header = () => {
         <ul className="flex space-x-4">
           {navItems.map((item, index) => (
             <li key={index}>
-              <a
-                href={item.href}
+              <Link
+                to={item.href} // Using Link instead of anchor tag
                 className="hover:underline transition-colors duration-300"
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -51,13 +51,13 @@ const Header = () => {
           <ul className="text-center">
             {navItems.map((item, index) => (
               <li key={index} className="py-4">
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href} // Using Link instead of anchor tag
                   className="text-xl"
                   onClick={toggleMobileNav}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
