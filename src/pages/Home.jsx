@@ -1,31 +1,27 @@
-import SectionOne from '../component/SectionOne';
-import SectionTwo from '../component/SectionTwo';
-import SectionThree from '../component/SectionThree';
-import SectionFour from '../component/SectionFour';
-import SectionFive from '../component/SectionFive';
-import SectionSix from '../component/SectionSix';
-import SectionSeven from '../component/SectionSeven';
-import SectionNine from '../component/SectionNine';
-import SectionTen from '../component/SectionTen';
-import Footer from '../component/Footer';
+
+import FeaturedProducts from "../component/FeaturedProducts";
+import VideoSection from "../component/VideosSection";
+import SpecialOffers from "../component/SpecialOffers";
+import AboutCompany from "../component/AboutCompany";
+import Newsletter from "../component/NewsLetter";
+
+import Hero from '../component/Hero';
 
 
 
 function Home() {
   return (
     <>
-      <SectionOne/>
-      <SectionTwo/>
-      <SectionThree/>
-      <SectionFour/>
-      <SectionFive/>
-      <SectionSix/>
-      <SectionSeven/>
-      <SectionNine/>
-      <SectionTen/>
-      <Footer/>
+      
+      <Hero/>
+      <FeaturedProducts />
+      <VideoSection />
+      <SpecialOffers />
+      <AboutCompany />
+      <Newsletter />
+      
     </>
-  )
+  );
 }
 
 export default Home

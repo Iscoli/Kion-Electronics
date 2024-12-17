@@ -1,79 +1,130 @@
-import facebook from "../assets/facebook.svg";
-import twitter from "../assets/twitter.svg";
-import instagram from "../assets/instagram.svg";
-import linkedel from "../assets/linkedel.svg";
-import phone from "../assets/phone.svg";
-import location from "../assets/location.svg";
-import styles from "./footer.module.scss";
-import star2 from "../assets/star1.png";
-import star1 from "../assets/star.png";
-import star3 from "../assets/star22.png";
 
-function Footer() {
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
+
+const Footer = () => {
+  const quickLinks = [
+    { label: "Home", href: "index.html" },
+    { label: "Products", href: "products.html" },
+    { label: "Services", href: "services.html" },
+    { label: "About Us", href: "company.html" },
+    { label: "Support", href: "support.html" },
+  ];
+
+  const legalLinks = [
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms of Service", href: "#" },
+    { label: "Warranty", href: "#" },
+    { label: "Return Policy", href: "#" },
+  ];
+
+  const socialLinks = [
+    { icon: Facebook, href: "#" },
+    { icon: Twitter, href: "#" },
+    { icon: Linkedin, href: "#" },
+    { icon: Instagram, href: "#" },
+  ];
+
   return (
-    <section id="contact" className={styles.MainContainer}>
-      <img src={star3} className={`${styles.star4} ${styles.blink}`} />
-      <div className={styles.flexContainer}>
-        <div className={styles.sec1}>
-          <img src={star1} className={`${styles.star1} ${styles.blink3}`} />
-          <p style={{ fontSize: "24px" }}>
-            get
-            <span style={{ fontSize: "24px" }} className={styles.color}>
-              linked
-            </span>
-          </p>
-          <p>
-            Getlinked Tech Hackathon is a technology innovation program
-            established by a group of organizations with the aim of showcasing
-            young and talented individuals in the field of technology
-          </p>
-          <p>
-            Terms of Use
-            <span className={styles.line1}></span>
-            Privacy Policy
-          </p>
+    <footer className="bg-gray-900 text-white py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div>
+            <div className="text-2xl font-bold text-blue-500 mb-4">
+              Kion Electric
+            </div>
+            <p className="mb-6">
+              Powering Nigerias sustainable future through innovative energy
+              solutions.
+            </p>
+            <div className="flex space-x-4">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="text-white hover:text-blue-500 transition-colors"
+                >
+                  <social.icon size={24} />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4 border-b-2 border-blue-500 pb-2">
+              Quick Links
+            </h3>
+            <ul>
+              {quickLinks.map((link, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={link.href}
+                    className="hover:text-blue-500 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4 border-b-2 border-blue-500 pb-2">
+              Contact Us
+            </h3>
+            <ul>
+              <li className="flex items-center mb-3">
+                <MapPin size={20} className="mr-3 text-blue-500" />
+                Lagos, Nigeria
+              </li>
+              <li className="flex items-center mb-3">
+                <Phone size={20} className="mr-3 text-blue-500" />
+                +234 (0) 123 456 7890
+              </li>
+              <li className="flex items-center">
+                <Mail size={20} className="mr-3 text-blue-500" />
+                info@kionelectric.com
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal Links */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4 border-b-2 border-blue-500 pb-2">
+              Legal
+            </h3>
+            <ul>
+              {legalLinks.map((link, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={link.href}
+                    className="hover:text-blue-500 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <div className={styles.sec2}>
-          <img src={star2} className={`${styles.star2} ${styles.blink}`} />
-          <p className={styles.color}>useful Links</p>
-          <p>overveiw</p>
-          <p>TimeLine</p>
-          <p>FAQS</p>
-          <p>Register</p>
-          <p>
-            <span className={styles.color}> Follow Us</span>
-            <img className={styles.social} src={facebook} />
-            <img className={styles.social} src={twitter} />
-            <img className={styles.social} src={instagram} />
-            <img className={styles.social} src={linkedel} />
-          </p>
-        </div>
-
-        <div style={{ position: "relative" }} className={styles.sec3}>
-          <img src={star1} className={`${styles.star3} ${styles.blink3}`} />
-          <p className={styles.color}>contact</p>
-          <p>
-            <img src={phone} />
-            +234 6707653444
-          </p>
-          <p>
-            <img src={location} />
-            27,Alara Street Yaba 100012 Lagos State
-          </p>
+        {/* Footer Bottom */}
+        <div className="mt-12 pt-6 border-t border-gray-700 text-center">
+          <p>&copy; 2024 Kion Electric. All Rights Reserved.</p>
         </div>
       </div>
-
-      <footer
-        style={{
-          padding: "30px",
-          textAlign: "center",
-        }}
-      >
-        All rights reserved. © getlinked Ltd.
-      </footer>
-    </section>
+    </footer>
   );
-}
+};
 
 export default Footer;
