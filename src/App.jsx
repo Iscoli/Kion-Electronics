@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./pages/Home";
 import { useLocation } from "react-router-dom";
-import Footer from "./component/footer";
+import Footer from "./component/Footer";
 import Header from "./component/Header";
 import { ServicesPage } from "./pages/ServicesPage";
 import { ProductsPage } from "./pages/Product";
